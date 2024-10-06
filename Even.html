@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s=parseInt(prompt("Enter the size of the Array: "));
+        let arr1=[];
+        let arr2=[];
+        for(let i=0;i<s;i++)
+        {
+            let a=prompt("Enter the Array Element: ");
+            arr1.push(a);
+        }
+        for(let i=0;i<s;i++)
+        {
+            if ((arr1[i]%2)==0)
+            {
+                arr2.push(arr1[i]);
+            }
+        }
+        document.write("The Even Numbers: " + arr2);
+    </script>
+</body>
+</html>
